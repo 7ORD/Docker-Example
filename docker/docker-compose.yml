@@ -1,0 +1,12 @@
+services:
+  backend:
+    image: test:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mqtt
+
+  mqtt:
+    image: eclipse-mosquitto:2
+    ports:
+      - "1883:1883"
