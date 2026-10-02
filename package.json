@@ -1,0 +1,20 @@
+{
+  "name": "docker-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.16.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module"
+}
